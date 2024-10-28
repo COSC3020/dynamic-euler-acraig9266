@@ -17,4 +17,4 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
-The primary e function contains 2 constant time operations and 1 call to the e2 function. The e2 function calls itself from count = 1 to count = n or n - 1 times. All other lines of code are O(1), so the complexity of e2 is n-1 which is called once. Therefore, the complexity is T(n) ∈ Θ(n). 
+The primary e function contains 2 constant time operations and 1 call to the eHelp function. The eHelp function calls itself from count = 1 to count = n which increments by 1 each call, meaning it calls itself n - 1 times. All other lines of code are constant, so the complexity of eHelp is n - 1 which is called once. Therefore, the complexity is T(n) ∈ Θ(n). 
