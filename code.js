@@ -1,9 +1,15 @@
-function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
+function e(n) {
+    if (n === 1) { return 1; }
+    else if (n === 2) { return 2; }
+    else {
+        return eHelp(n, 1, 2);
+    }
 }
 
-function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
+function eHelp(n, count, total, fact = 1) {
+    if (count == n) { return total; }
+    else {
+        fact = fact * (count + 1);
+        return eHelp(n, count + 1, total + (1.0 / fact), fact);
+    }
 }

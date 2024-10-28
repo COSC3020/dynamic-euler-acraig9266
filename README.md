@@ -1,3 +1,6 @@
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+No sources were used to complete this.
+
 # Dynamic Programming Euler's Number
 
 The mathematical constant $e$ (Euler's number) is defined as follows:
@@ -17,3 +20,4 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+The primary e function contains 2 constant time operations and 1 call to the eHelp function. The eHelp function calls itself from count = 1 to count = n which increments by 1 each call, meaning it calls itself n - 1 times. All other lines of code are constant, so the complexity of eHelp is n - 1 which is the highest order term. Therefore, the complexity is T(n) ∈ Θ(n). 
